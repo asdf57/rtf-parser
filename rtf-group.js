@@ -34,4 +34,4 @@ class RTFGroup {
   }
 }
 
-module.exports = RTFGroup
+export default RTFGroup;

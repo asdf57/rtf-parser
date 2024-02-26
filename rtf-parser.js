@@ -1,5 +1,5 @@
 'use strict'
-const Transform = require('readable-stream').Transform
+import { Transform } from 'stream';
 
 class RTFParser extends Transform {
   constructor () {
@@ -172,4 +172,4 @@ class RTFParser extends Transform {
   }
 }
 
-module.exports = RTFParser
+export default RTFParser;

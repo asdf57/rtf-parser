@@ -8,4 +8,4 @@ class RTFParagraph {
   }
 }
 
-module.exports = RTFParagraph
+export default RTFParagraph;

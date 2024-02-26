@@ -8,4 +8,4 @@ class RTFSpan {
   }
 }
 
-module.exports = RTFSpan
+export default RTFSpan;

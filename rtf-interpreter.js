@@ -1,12 +1,11 @@
 'use strict'
-const assert = require('assert')
-const util = require('util')
-
-const Writable = require('readable-stream').Writable
-const RTFGroup = require('./rtf-group.js')
-const RTFParagraph = require('./rtf-paragraph.js')
-const RTFSpan = require('./rtf-span.js')
-const iconv = require('iconv-lite')
+import assert from 'assert';
+import util from 'util';
+import { Writable } from 'stream';
+import RTFGroup from './rtf-group.js';
+import RTFParagraph from './rtf-paragraph.js';
+import RTFSpan from './rtf-span.js';
+const iconv = require('iconv-lite');
 
 const availableCP = [
   437, 737, 775, 850, 852, 853, 855, 857, 858, 860, 861, 863, 865, 866,
@@ -419,4 +418,4 @@ class ColorTable extends RTFGroup {
   }
 }
 
-module.exports = RTFInterpreter
+export default RTFInterpreter;

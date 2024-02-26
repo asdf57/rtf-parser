@@ -1,6 +1,6 @@
 'use strict'
-const RTFGroup = require('./rtf-group.js')
-const RTFParagraph = require('./rtf-paragraph.js')
+import RTFGroup from './rtf-group.js';
+import RTFParagraph from './rtf-paragraph.js';
 
 class RTFDocument extends RTFGroup {
   constructor () {
@@ -70,4 +70,4 @@ class RTFDocument extends RTFGroup {
   }
 }
 
-module.exports = RTFDocument
+export default RTFDocument;
